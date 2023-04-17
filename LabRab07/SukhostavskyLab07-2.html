@@ -7,8 +7,8 @@
 	<body text="black">
 	<form>
 		<pre>Ваше ім'я:<input id="name" type="text" maxlength="40" size="40" value="">
-Ваша стать:	<input type="radio" id="pol" value="male">	Чоловіча
-		<input type="radio" id="pol" value="female">	Жіноча
+Ваша стать:	<input type="radio" id="male" name="Стать" value="male">	<label for="male">Чоловіча</label>
+		<input type="radio" id="female" name="Стать" value="female">	<label for="female">Жіноча</label>
 На якому курсі Ви навчаєтесь?
 		<select id="curs" size="1">
 			<option value="1" selected>Перший</option>
@@ -25,7 +25,7 @@
 			<textarea id="about" rows="6" cols="60" wrap="off"></textarea>
 			<p><input type="submit" value="Відіслати дані" onclick="alert(Date());">
 			<input type="reset" value="Очистити форму">
-			<input type="file" id="friend" size="50" accept="припустимий тип файлу"
+			<input type="file" id="friend" size="50" accept="припустимий тип файлу">
 	</form>
 	</body>
 </html>

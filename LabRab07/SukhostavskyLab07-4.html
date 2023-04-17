@@ -1,0 +1,60 @@
+<!DOCTYPE HTML> 
+<html>
+	<head>
+		<title> Замовлення </title>
+		<meta charset=UTF-8>		
+	</head>
+	<body bgcolor="black" text="white">
+    <font size="4">   
+	<form>
+	<table border="0" width="60%" align="center">
+        <caption><h1>Замовлення товару</h1></caption>
+        <tr valign="top">
+            <td width="50%">
+                <p><label for="code">Номер телефону</label><br>
+                <select name="code" id="code" size="1">
+                    <option value="1" selected>+38</option>
+                    <option value="2" >+43</option>
+                    <option value="3" >+32</option>
+                    <option value="4" >+359</option>
+                    <option value="5" >+30</option>
+                    <option value="6" >+45</option>
+                    <option value="7" >+39</option>
+                    <option value="8" >+31</option>
+                    <option value="9" >+49</option>
+                    <option value="10" >+421</option>
+                    <option value="11" >+358</option>
+                    <option value="12" >+33</option>
+                    <option value="13" >+46</option>
+                    </select>
+                <input id="number" type="text" maxlength="10" size="10" value=""></p>
+                <p><label for="bank">Номер банківського рахунку</label><br>
+                    <input id="bank" type="text" maxlength="16" size="13" value=""></p>
+                <p><label for="pay">Спосіб оплати</label><br>
+                    <input type="radio" id="cash" name="pay" value="cash">
+                    <label for="cash">Готівкою</label><br>
+                    <input type="radio" id="dcard" name="pay" value="dcard">
+                    <label for="dcard">Картою</label></p>
+                <p><label for="comment">Коментар</label><br><br>
+                    <textarea id="comment" rows="6" cols="50" wrap="off"></textarea></p>
+            </td>
+            <td>
+                <p><input type ="checkbox" id="cpu" value="yes" checked>
+                <label for="cpu">Процесор Intel Core i5-10400F 2.9(4.3)GHz s1200 Box (BX8070110400F)</label></p>
+                <p><input type ="checkbox" id="mb" value="yes">
+                <label for="mb">Материнська плата AsRock B460M Pro4 (s1200, Intel B460)</label></p>
+                <p><input type ="checkbox" id="gpu" value="yes">
+                <label for="gpu">Відеокарта PNY GeForce GTX 1060 XLR8 Gaming OC 6144MB (KF1060GTXXG6GEPB)</label></p>
+                <p><input type ="checkbox" id="ram" value="yes">
+                <label for="ram">ОЗУ Patriot DDR4 16GB (2x8GB) 3600Mhz Viper Steel (PVS416G360C8K)</label></p>
+                <p><input type ="checkbox" id="psu" value="yes">
+                <label for="psu">Блок живлення CHIEFTEC Proton 600W (BDF-600S)</label></p>
+                <p><input type ="checkbox" id="ssd" value="yes">
+                <label for="ssd">SSD диск Kingston NV2 3D NAND 500GB M.2 (2280 PCI-E) NVMe x4 (SNV2S/500G)</label></p>
+            </td>
+        </tr> 
+    </table>	
+	</form>
+    </font>   
+	</body>
+</html>
