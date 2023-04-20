@@ -1,0 +1,44 @@
+.section {
+    font-size: 22pt;
+    text-align: center;               
+}
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 20pt;
+}
+.footnote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    text-indent: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+a {
+    text-decoration: none;
+}
+.menu {
+    list-style-type: none;
+    font-size: 15pt;
+    text-indent: 3%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: rgb(182, 182, 182);
+    color:#000
+}
+.menu :hover {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+}
+.small {
+    font-size: small;
+    margin: 0;
+    padding-left: 3%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    background-color: rgb(182, 182, 182);
+}
