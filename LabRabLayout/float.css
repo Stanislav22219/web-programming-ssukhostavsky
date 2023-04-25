@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+.wrapper-float {
+    height: 100vh;
+    display: block;
+}
+.float-box {
+    border: 1px solid;
+    border-color: lightgrey;
+    margin: 1.5px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.box1 {
+    float: left;
+    background-color: rgb(0, 110, 255);
+    width: 80.5%;
+    height: 25%;
+}
+.box2 {
+    float: right;
+    background-color: grey;
+    width: 19.2%;    height: 80.5%;
+    margin-right: -2px;
+}
+.box3 {
+    float: left;
+    background-color: lightskyblue;
+    width: 24.9%;
+    height: 25%;
+}
+.box4 {
+    float: left;
+    background-color: palevioletred;
+    width: 24.9%;
+    height: 25%;
+}
+.box5 {
+    float: right;
+    background-color: gold;
+    width: 30.1%;
+    height: 55%;
+    margin-right: 2.5px;
+}
+.box6 {
+    float: left;
+    background-color: rgb(71, 179, 137);
+    width: 50.1%;
+    height: 29.7%;
+}
+.box7 {
+    float: left;
+    background-color: rgb(179, 95, 0);
+    width: 100%;
+    height: 20%;
+}
+@media only screen and (max-width: 1200px) {
+    .box1 {width: 100%;height: 25%;}
+    .box2 {width: 20%;height: 50%;}
+    .box3 {width: 20%;height: 50%;}
+    .box4 {width: 20%;height: 50%;}
+    .box5 {width: 19%;height: 50%;}
+    .box6 {width: 19%;height: 50%;}
+    .box7 {width: 100%;height: 25%;}
+}
+@media only screen and (max-width: 950px) {
+    .box1 {width: 100%;  height: 25%;}
+    .box2 {width: 18.9%;height: 55%;}
+    .box3 {width: 25%;height: 25%;}
+    .box4 {width: 25%;height: 25%;}
+    .box5 {width: 29.3%;height: 55%;}
+    .box6 {width: 50.2%;height: 29.7%;}
+    .box7 {width: 100%;height: 20%;}
+}
+@media only screen and (max-width: 750px) {
+    .box1 {width: 100%;  height: 25%;}
+    .box2 {width: 23.5%;height: 55%;}
+    .box3 {width: 37.2%;height: 27.2%;}
+    .box4 {width: 37.2%;height: 27.2%;}
+    .box5 {width: 37.2%;height: 27.2%;float: left;}
+    .box6 {width: 37.2%;height: 27.2%;}
+    .box7 {width: 100%;height: 20%;}
+}
+@media only screen and (max-width: 500px) {
+    .box1 {width: 100%;  height: 20%;}
+    .box2 {width: 43%;height: 61.5%;}
+    .box3 {width: 55%;height: 15%;}
+    .box4 {width: 55%;height: 15%;}
+    .box5 {width: 55%;height: 15%;float: left;}
+    .box6 {width: 55%;height: 15%;}
+    .box7 {width: 100%;height: 20%;}
+}
