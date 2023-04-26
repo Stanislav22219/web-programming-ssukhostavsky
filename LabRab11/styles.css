@@ -1,0 +1,58 @@
+body {
+    background-image: url("https://st4.depositphotos.com/2051931/39171/i/450/depositphotos_391714654-stock-photo-background-texture-white-paper-pattern.jpg");
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    color: blue;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    text-indent: 5%;
+    text-align: justify;
+    font-size: 25px;
+    font-style: italic;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+ul {font-size: 25pt;
+    line-height: 75pt;
+    color: dodgerblue;
+    margin-left:35pt;
+    margin-right:20pt;
+    margin-top:25pt;
+    margin-bottom:6%;}
+img {
+    float: left;
+    width: 300px;
+    margin: 0px 20px 20px 0px;
+}
+button {padding: 15px 30px;
+    font-size: 15pt;
+    border-radius: 15px;
+    background-color: white;
+}
+button:hover {
+    color: white;
+    background-color: dodgerblue;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Comic Sans MS";
+    color: dodgerblue;
+    padding: 6px;
+}
+a:hover {
+     color: white;
+    background-color: dodgerblue;
+}
+a:visited {
+    color: #e100e1;
+}
