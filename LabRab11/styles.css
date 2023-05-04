@@ -1,115 +1,58 @@
-.wrapper {
-    height: auto;
-    margin: 0;
-    color: white;
+body {
+    background-image: url("https://st4.depositphotos.com/2051931/39171/i/450/depositphotos_391714654-stock-photo-background-texture-white-paper-pattern.jpg");
+}
+h1 {
+    font-size: 40px;
     font-weight: bold;
-    font-family: Arial;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    color: blue;
 }
-header {
-    display: flex;
-    background-color: black;
+h2 {
+    font-size: 30px;
 }
-.header-left {
-    flex: 1;
+p {
+    text-indent: 5%;
+    text-align: justify;
+    font-size: 25px;
+    font-style: italic;
+    padding-left: 3%;
+    padding-right: 3%;
 }
-nav {
-    flex: 3;
+ul {font-size: 25pt;
+    line-height: 75pt;
+    color: dodgerblue;
+    margin-left:35pt;
+    margin-right:20pt;
+    margin-top:25pt;
+    margin-bottom:6%;}
+img {
+    float: left;
+    width: 300px;
+    margin: 0px 20px 20px 0px;
 }
-.header-right {
-    flex: 1;
-    display: flex;
+button {padding: 15px 30px;
+    font-size: 15pt;
+    border-radius: 15px;
+    background-color: white;
 }
-.header-right img {
-    height: 30px;
-}
-.header-right div {
-    padding: 5px;
-}
-a {
-    text-decoration: none;
-}
-ul {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-}
-li {
-    text-transform: capitalize;
-    padding: 10px;
-}
-main {
-    display: flex;
-    flex-direction: column;
-}
-.title-crtns {
-    display: flex;
-    background-color: #1f2123;
-    height: 45px;
-    padding: 0 0 0 25px;
-    align-items: center;
-}
-.title-crtns img {
-    height: 25px;
-}
-.title-crtns-left {
-    flex-grow: 9;
+button:hover {
     color: white;
+    background-color: dodgerblue;
+}
+
+a:link {
+    text-decoration: none;
     font-weight: bold;
+    font-style: normal;
+    font-family: "Comic Sans MS";
+    color: dodgerblue;
+    padding: 6px;
 }
-.title-crtns-right {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    color: lightgrey;
-    margin-right: -7%;
+a:hover {
+     color: white;
+    background-color: dodgerblue;
 }
-.title-crtns-right div {
-    padding: 5px;
-}
-.crtns {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    background-color: #131415;
-    color: white;
-    text-align: center;
-    line-height: 25px;
-    padding: 15px 15px 15px 15px;
-    gap: 30px;
-    box-sizing: border-box;
-}
-.crtns div {
-    flex: 1;
-    padding: 15px 3px 15px 3px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.crtns img {
-    max-width: 100%;
-}
-.title-crtnsr {
-    display: flex;
-    background-color: #2d2e30;
-    height: 45px;
-    padding: 0 0 0 25px;
-    align-items: center;
-}
-.crtnsr {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    background-color: #243442;
-    color: white;
-    text-align: center;
-    line-height: 25px;
-    padding: 15px 15px 15px 15px;
-    gap: 30px;
-    box-sizing: border-box;
-}
-.crtnsr div {
-    flex: 1;
-    background-color: #223341;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.crtnsr img {
-    max-width: 100%;
+a:visited {
+    color: #e100e1;
 }
