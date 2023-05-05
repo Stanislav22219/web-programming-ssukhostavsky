@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 .wrapper {
     height: auto;
     margin: 0;
@@ -8,16 +13,24 @@
 header {
     display: flex;
     background-color: black;
+    height: auto;
+    font-size: 12px;
+    align-items: center;
 }
 .header-left {
-    flex: 1;
+    flex: 2;
+}
+.header-left img {
+    max-width: 80%;
+    padding: 5px;
 }
 nav {
-    flex: 3;
+    flex: 6;
 }
 .header-right {
-    flex: 1;
+    flex: 2;
     display: flex;
+    align-items: center;
 }
 .header-right img {
     height: 30px;
@@ -27,6 +40,10 @@ nav {
 }
 a {
     text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: orangered;
 }
 ul {
     display: flex;
@@ -34,7 +51,7 @@ ul {
     text-decoration: none;
 }
 li {
-    text-transform: capitalize;
+    text-transform:uppercase;
     padding: 10px;
 }
 main {
