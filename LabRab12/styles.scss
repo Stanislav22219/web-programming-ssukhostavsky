@@ -1,23 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .wrapper {
   height: auto;
   margin: 0;
   color: white;
   font-weight: bold;
   font-family: Arial;
+  font-size: 24px;
 }
 header {
   display: flex;
   background-color: black;
+  height: auto;
+  font-size: 12px;
+  align-items: center;
 }
 .header-left {
-  flex: 1;
+  flex: 2;
+  min-width: 150px;
+}
+.header-left img {
+  max-width: 80%;
+  padding: 5px;
 }
 nav {
-  flex: 3;
+  flex: 6;
 }
 .header-right {
-  flex: 1;
+  flex: 2;
   display: flex;
+  align-items: center;
 }
 .header-right img {
   height: 30px;
@@ -27,6 +42,10 @@ nav {
 }
 a {
   text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: orangered;
 }
 ul {
   display: flex;
@@ -34,8 +53,9 @@ ul {
   text-decoration: none;
 }
 li {
-  text-transform: capitalize;
+  text-transform:uppercase;
   padding: 10px;
+  font-size: 20px;
 }
 main {
   display: flex;
@@ -44,8 +64,8 @@ main {
 .title-crtns {
   display: flex;
   background-color: #1f2123;
-  height: 45px;
-  padding: 0 0 0 25px;
+  height: auto;
+  padding: 5px 25px 5px 50px;
   align-items: center;
 }
 .title-crtns img {
@@ -61,7 +81,6 @@ main {
   flex-grow: 1;
   align-items: center;
   color: lightgrey;
-  margin-right: -7%;
 }
 .title-crtns-right div {
   padding: 5px;
@@ -74,7 +93,7 @@ main {
   color: white;
   text-align: center;
   line-height: 25px;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 45px;
   gap: 30px;
   box-sizing: border-box;
 }
@@ -84,13 +103,21 @@ main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .crtns img {
-  max-width: 100%;
+  max-width: 100%
+}
+.crtns img:hover {
+  border: orangered 5px solid;
+  box-sizing: border-box;
+}
+.crtnsr img:hover {
+  border: orangered 5px solid;
+  box-sizing: border-box;
 }
 .title-crtnsr {
   display: flex;
   background-color: #2d2e30;
-  height: 45px;
-  padding: 0 0 0 25px;
+  height: auto;
+  padding: 5px 25px 5px 50px;
   align-items: center;
 }
 .crtnsr {
@@ -112,4 +139,35 @@ main {
 }
 .crtnsr img {
   max-width: 100%;
+}
+footer {
+  display: flex;
+  background-color: #1f2123;
+  height: auto;
+  padding: 5px 25px 5px 50px;
+  align-items: center;
+}
+.footer img {
+  height: 25px;
+}
+.footer-left {
+  flex-grow: 3;
+  color: white;
+  font-weight: bold;
+}
+.footer-mid {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  color: lightgrey;
+}
+.footer-mid div {
+  padding: 5px;
+}
+.footer-right {
+  font-size: 35px;
+  flex-grow: 1;
+}
+.crtns, .crtnsr div {
+  font-size: 20px;
 }
