@@ -1,4 +1,4 @@
-var gulp = require('gulp')
+let gulp = require('gulp')
 
 let sass = require('gulp-sass');
 
@@ -9,7 +9,7 @@ gulp.task('sass',function () {
 });
 
 
-var concat = require('gulp-concat');
+let concat = require('gulp-concat');
 
 gulp.task('concat-css', function () {
     return gulp.src('./app/css/**/*.css')
@@ -42,7 +42,7 @@ gulp.task('rename', function () {
         .pipe(gulp.dest('./dist/js'))
 });
 
-var cssnano = require('cssnano');
+let cssnano = require('cssnano');
 
 gulp.task('minify', function() {
     return gulp.src('**/*.css')
@@ -59,7 +59,7 @@ gulp.task('image', function() {
 });
 
 
-var uglifycss = require('gulp-uglifycss');
+let uglifycss = require('gulp-uglifycss');
 
 gulp.task('css', function () {
     gulp.src('/**/*.css')

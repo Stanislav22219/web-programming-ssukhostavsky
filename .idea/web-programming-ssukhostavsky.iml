@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="group_102" />
+    <orderEntry type="module" module-name="LabRab13" />
   </component>
 </module>
