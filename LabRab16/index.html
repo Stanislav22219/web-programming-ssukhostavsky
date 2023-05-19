@@ -30,22 +30,43 @@
             </div>
         </li>
         <li>
-            <div class="d-flex flex-column container p-3">
-                <a id="h12" href="#посилання1">Перше гіперпосилання із дописом</a>
-                <a id="h22" href="#посилання2">Друге гіперпосилання із дописом</a>
-                <a id="h32" href="#посилання3">Третє гіперпосилання із дописом</a>
+            <div class="d-flex justify-content-evenly p-5">
+                <input id="inputText1" type="text" value="123">
+                <input id="inputText2" type="text" value="456">
+                <input id="inputText3" type="text" value="789">
+            </div>
+        </li>
+        <li>
+            <p class="text-center" id="demo"></p>
+            <div class="text-center text-light p-3">
+                <p id="p1" class="bg-primary">3</p>
+                <p id="p2" class="bg-success">24</p>
+                <p id="p3" class="bg-info">576</p>
             </div>
         </li>
         <li>
             <div class="d-flex justify-content-evenly p-5">
-                <input id="inputText1" type="text" value="">
-                <input id="inputText2" type="text" value="">
-                <input id="inputText3" type="text" value="">
+                <div>
+                    <label for="input1">Номер телефону</label><br>
+                    <input id="input1" maxlength="10" type="text" value="">
+                </div>
+                <div>
+                    <label for="input2">Введіть Нікнейм (від 4 символи)</label><br>
+                    <input id="input2" size="26.5" type="text" value="">
+                </div>
+                <div>
+                    <label for="input3">Введіть 4-х значний код</label><br>
+                    <input id="input3" maxlength="4" type="password" value="">
+                </div>
             </div>
-            <p class="text-center" id="demo"></p>
         </li>
     </ol>
     <h2 class="text-center">Завдання 2</h2>
+    <div class="container d-flex gap-2">
+        <div id="div1" style="background-color: green; height: 300px; width: 300px; margin-bottom: 25px;"></div>
+        <div id="div2" style="background-color: green; height: 300px; width: 300px; margin-bottom: 25px;"></div>
+        <div id="div3" style="background-color: green; height: 300px; width: 300px; margin-bottom: 25px;"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
