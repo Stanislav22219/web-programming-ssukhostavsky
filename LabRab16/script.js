@@ -1,7 +1,7 @@
 'use strict'
 
 
-//Завдання 1
+//Завдання 1.1
 document.getElementById("img1").onclick = function() {imgsrc1()};
 
 function imgsrc1() {
@@ -21,7 +21,7 @@ function imgsrc3() {
 }
 
 
-//Завдання 2
+//Завдання 1.2
 let a1 = document.getElementById('a1');
 a1.addEventListener("mouseover",titleWrite1);
 function titleWrite1() {
@@ -44,7 +44,7 @@ function titleWrite3() {
 }
 
 
-//Завдання 3
+//Завдання 1.3
 let h1 = document.getElementById('h1');
 h1.addEventListener("mouseover",afterWrite1);
 function afterWrite1() {
@@ -67,16 +67,16 @@ function afterWrite3() {
 }
 
 
-//Завдання 4
+//Завдання 1.4
 let h12 = document.getElementById('h12');
 h12.addEventListener("mouseover",afterWrite12);
 h12.addEventListener("mouseout",afterClear12);
 function afterWrite12() {
-    h12.innerHTML+=h12.getAttribute("href");
+    h12.innerHTML+='('+h12.getAttribute("href")+')';
     h12.removeEventListener("mouseover",afterWrite12);
 }
 function afterClear12() {
-    h12.innerHTML;
+    h12.innerHTML.remove();
     h12.removeEventListener("mouseout",afterClear12);
 }
 
@@ -94,4 +94,24 @@ h32.addEventListener("mouseover",afterWrite32);
 function afterWrite32() {
     h32.innerHTML+=h32.getAttribute("href");
     h32.removeEventListener("mouseover",afterWrite32);
+}
+
+
+//Завдання 1.5
+let inputText1 = document.getElementById('inputText1');
+inputText1.addEventListener('blur',valueOut1); 
+function valueOut1(){
+    document.getElementById('demo').innerHTML = inputText1.value;
+}
+
+let inputText2 = document.getElementById('inputText2');
+inputText2.addEventListener('blur',valueOut2); 
+function valueOut2(){
+    document.getElementById('demo').innerHTML = inputText2.value;
+}
+
+let inputText3 = document.getElementById('inputText3');
+inputText3.addEventListener('blur',valueOut3); 
+function valueOut3(){
+    document.getElementById('demo').innerHTML = inputText3.value;
 }
