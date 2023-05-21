@@ -3,7 +3,6 @@
 let again = 'Спробувати ще раз?';
 let reload = 'Спробувати ще раз?';
 let num = parseInt((Math.random()*100)+1);
-alert(num);
 let guess = 0;
 let difference = 0;
 let count = 0;
