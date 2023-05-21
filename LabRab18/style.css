@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container1{
+    border: 0.25em black solid;
+}
+h1{
+    font-size: 5em; 
+    color: rgba(255, 0, 0, 0.664);
+    margin-top: 1em;
+}
+button{
+    color: white;
+    background-color: lightskyblue;
+    font-size: 2em;
+    border: 0.1em royalblue solid;
+    border-radius: 0.5em;
+    padding: 0.25em;
+}
+#start{
+    margin: 3em;
+}
+
+#restart{
+    margin: 1em;
+}
+#timer{
+    font-size: 2em;
+    padding: 0.25em;
+}
+.row{
+    min-height: 4em;
+    border: 1px black solid;
+}
+.col{
+    border: 1px black solid;
+    padding: 1.2em;
+}
+.table{
+    margin: 0 auto;
+}
