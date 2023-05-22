@@ -7,7 +7,7 @@ body{
   justify-content: center;
   height: 100vh;
 }
-.container1{
+.container{
     border: 0.25em black solid;
 }
 h1{
@@ -35,13 +35,16 @@ button{
     padding: 0.25em;
 }
 .row{
-    min-height: 4em;
     border: 1px black solid;
+    max-height: 100px;
 }
 .col{
     border: 1px black solid;
-    padding: 1.2em;
+    line-height: 100px;
 }
 .table{
     margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    text-shadow: 1px 1px 2px black;
 }
