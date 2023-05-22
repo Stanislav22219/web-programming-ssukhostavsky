@@ -1,7 +1,7 @@
 'use strict'
 
 document.getElementById('date').addEventListener("click", date);
-const f = new Intl.DateTimeFormat("ua-eu", {
+const f = new Intl.DateTimeFormat("uk-eu", {
     timeStyle: "medium",
     dateStyle: "full",
 });

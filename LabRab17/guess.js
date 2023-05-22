@@ -12,7 +12,7 @@ const f = new Intl.DateTimeFormat("ua-eu", {
 });
 
 
-window.onload = cycle();
+cycle()
 function cycle(){
     do {
         count++;
@@ -24,6 +24,8 @@ function cycle(){
         else if (guess < num) {
             difference = num - guess;
         }
+
+
         if (guess == num) {
             console.log(f.format(new Date())+' Спроба '+count+': число '+guess+' - вірно')
             alert('За '+count+ ' спроб ви вгадали число ' + num);
@@ -47,11 +49,11 @@ function cycle(){
             console.log(f.format(new Date())+' Спроба '+count+': число '+guess+' - не вірно')
             alert("Дуже гаряче!")
         }else
-        if (difference/100 <= .20){
+        if (difference/100 <= .15){
             console.log(f.format(new Date())+' Спроба '+count+': число '+guess+' - не вірно')
             alert("Гаряче")
         }else
-        if (difference/100 <= .50){
+        if (difference/100 <= .40){
             console.log(f.format(new Date())+' Спроба '+count+': число '+guess+' - не вірно')
             alert("Холодно")
         }else{
