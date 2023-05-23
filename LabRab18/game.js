@@ -40,9 +40,27 @@ function game(){
         $('#'+n).css('font-size', font+'pt');
         $('#'+n).css('color', '#'+randomColor);
         $('#'+n).click(check);
-        function check() {
-            if ($('#'+n).val==n){
-                console.log('s')
+
+
+        function check(element, numbers){
+            timer();
+            exnum = Math.min.apply(Math, numbers);
+            var index = numbers.indexOf(exnum);
+            var value = element.value;
+            if(exnum == value){
+                correct(element);
+                if(index > -1){
+                    numbers.splice(index, 1);
+                }
+                if(numbers.length == 0){
+                    document.getElementById("game").innerHTML="";
+                    Game();
+                }
+            }
+            else{
+                setWrong(element);
+                setTimeout(function(){
+                    setNormal(element)}, 200);
             }
         }
     }
