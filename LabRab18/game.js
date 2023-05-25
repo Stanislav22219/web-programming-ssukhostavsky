@@ -64,8 +64,6 @@ function game(){
             else{
                 console.log('wrong')
                 $(this).css('background-color','red')
-                alert('wrong')
-                
             }
         }
 
