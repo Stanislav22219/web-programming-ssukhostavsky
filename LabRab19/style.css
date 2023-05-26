@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    padding: 10% 0;
+}
+
+.wrapper{
+    border: 0.25em black solid;
+    display: flex;
+    padding: 0 50px;
+    gap: 50px;
+}
+
+table, td {
+  border: 1px solid;
+  align-self: center;
+}
+td{
+    width: 75px;
+    height: 75px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    color: white;
+    background-color: lightskyblue;
+    font-size: 2em;
+    border: 0.1em royalblue solid;
+    border-radius: 0.5em;
+    padding: 0.25em;
+}
