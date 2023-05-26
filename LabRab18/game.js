@@ -13,7 +13,7 @@ function game(){
             clearInterval(countdown);
             $('#restart').prop('disabled', false);
         }
-    }, 10000);
+    }, 1000);
     
     function shuffle(numbers) {
         let ctr = numbers.length, temp, index;

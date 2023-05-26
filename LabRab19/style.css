@@ -20,14 +20,17 @@ table, td {
   border: 1px solid;
   align-self: center;
 }
-td{
+td,img{
     width: 75px;
     height: 75px;
 }
 
 .right{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 button{
