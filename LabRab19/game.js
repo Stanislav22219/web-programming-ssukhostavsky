@@ -2,6 +2,7 @@
 
 $(document).ready(game)
 $(document).ready(randomImages)
+$(document).ready(Image)
 
 function game(){
     let wrapper = $("<div>").addClass("wrapper");
@@ -38,7 +39,7 @@ function game(){
 
 
     let right = $("<div>").addClass("right");
-    let btn = $("<button>").text("Почати з початку").attr("id", "restart");
+    let btn = $("<button>").text("Почати з початку").attr("id", "restart").attr("type", "button");
     let img = $("<img>").attr("id", "img");
 
 
@@ -53,6 +54,7 @@ function game(){
         tbl.append(tr4);
         tbl.append(tr5);
     $(document.body).append(wrapper);
+    $("#restart").click(function(){window.location.reload()})
 }
 
 let i = 1;
@@ -69,15 +71,42 @@ function randomImages(){
         repeat.splice(p,0,images[n]);
         images.splice(n, 1);
         i++;
-    }
+    }}
+    function Image(){
     console.log(id)
     console.log(repeat)
     let r = Math.floor(Math.random()*(repeat.length))
-    $('#img').attr("src", repeat[r]).draggable({stack:id[r]});
-    $(id[r]).droppable({drop: function(){$(this).css("background-color", "green")}});
-    
+    $('#img').attr("src", repeat[r]).draggable({
+        revert:true,
+        revertDuration:0,
+        stack:id[r],
+        cursor:"pointer"
+    });
+    $(id[r]).droppable({
+        accept:'#img',
+        drop: function(){
+        if(repeat.length>0){
+            $(this).css("background-color", "#00ff55")
+            id.splice(r,1)
+            repeat.splice(r,1)
+            Image()
+        }
+        if(repeat.length==0){
+            alert("Вітаю! Ви успішно завершили гру")
+            $(this).css("background-color", "#00ff55")
+            location.reload()
+        }
+    }});   
 }
 
+function splice(){
+    if(repeat.length>0){
+        $(this).css("background-color", "#00ff55")
+        id.splice(r,1)
+        repeat.splice(r,1)
+        splice()
+    }
+}
 
 
 
