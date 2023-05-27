@@ -39,7 +39,7 @@ function game(){
 
     let right = $("<div>").addClass("right");
     let btn = $("<button>").text("Почати з початку").attr("id", "restart");
-    let img = $("<div>").attr("id", "img");
+    let img = $("<img>").attr("id", "img");
 
 
 
@@ -56,17 +56,28 @@ function game(){
 }
 
 let i = 1;
-let images = Array.from({length: 45}, (_, i) => "images/"+(i + 1) +".jpg");
+const images = Array.from({length: 45}, (_, i) => "images/"+(i + 1) +".jpg");
+const repeat = [];
+const id = [];
 function randomImages(){
+    let n;
     for (let p=0;p<=24;p++){
-        let n = Math.floor(Math.random()*(images.length))
+        n = Math.floor(Math.random()*(images.length))
         $('#'+i).prepend($("<img>").attr("src", images[n]))
-        //$('#img').attr("src", images[n])
         console.log(images[n])
+        id.splice(p,0,'#'+i)
+        repeat.splice(p,0,images[n]);
         images.splice(n, 1);
         i++;
     }
+    console.log(id)
+    console.log(repeat)
+    let r = Math.floor(Math.random()*(repeat.length))
+    $('#img').attr("src", repeat[r]).draggable({stack:id[r]});
+    $(id[r]).droppable({drop: function(){$(this).css("background-color", "green")}});
+    
 }
+
 
 
 
