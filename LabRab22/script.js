@@ -81,3 +81,28 @@ function isDivisible3(n, x, y){
     }
 }
 isDivisible3(12,12,12)
+
+
+
+//6
+function task6(n){
+  const numbers = Array.from({length: n}, (_, i) => (i + 1)*2);
+  console.log(numbers)
+  let min = Math.min(...numbers)
+  let max = Math.max(...numbers)
+  let sum = numbers.reduce(function(a,b){
+    return a+b
+  })
+  let avg = sum/n
+  const odds = [];
+  numbers.forEach((num) => {
+  if (num % 2 === 1) {
+    odds.push(num);
+  }
+});
+  console.log("min="+min,"max="+max,"sum"+sum,"avg="+avg)
+  console.log(odds)
+}
+task6(10)
+
+
