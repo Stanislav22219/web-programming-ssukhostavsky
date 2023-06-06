@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Квадрат числа</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Квадрат числа</h1>
+  <input   id="numberInput" placeholder="Введіть число">
+  <button onclick="calculateSquare()">Обчислити</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateSquare() {
+      var number = $('#numberInput').val();
+
+      $.ajax({
+        url: '/calculate',
+        type: 'POST',
+        data: { number: number },
+        success: function(response) {
+          $('#result').text('Квадрат числа: ' + response);
+        },
+        error: function() {
+          $('#result').text('Помилка при обробці запиту.');
+        }
+      });
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

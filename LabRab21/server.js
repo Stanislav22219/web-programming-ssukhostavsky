@@ -1,17 +1,20 @@
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
-
-app.use('/', express.static('public'));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'))
-})
-.post("/", (req, res) => {
-    res.send
-})
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
 
-app.listen(process.env.PORT || 3000);
+app.post('/calculate', (req, res) => {
+  const number = req.body.number;
+  const square = number * number;
+  res.send(square.toString());
+});
+
+app.listen(3000, () => {
+  console.log('Сервер запущено на порту 3000');
+});
