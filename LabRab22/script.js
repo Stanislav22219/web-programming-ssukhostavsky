@@ -2,7 +2,8 @@
 
 function seconds(total){
     total %= 60;
-    console.log("1) "+total)
+    console.log("1)")
+    console.log(total)
 }
 seconds(2421)
 
@@ -12,7 +13,8 @@ seconds(2421)
 
 function perimeter(side, count){
     p = side * count
-    console.log("2) "+p)
+    console.log("2)")
+    console.log(p)
 }
 perimeter(5, 3)
 
@@ -42,7 +44,8 @@ fizzbuzz(15)
 
 function Calculate(x, y, z){
     avg = (x+y+z)/3
-    console.log("4) "+avg)
+    console.log("4)")
+    console.log(avg)
 }
 Calculate(3, 2, 3)
 
@@ -55,11 +58,11 @@ function isDivisible1(n, x, y){
         console.log("5.1) false")
     }
 }
-isDivisible1(12,12,12)
+isDivisible1(12,6,2)
 
 
 //5.2
-let ans = isDivisible2(12,11,12)
+let ans = isDivisible2(12,6,2)
 
 function isDivisible2(n, x, y) {
     return (n%x == 0 && n%y ==0) ? true : false;
@@ -69,8 +72,9 @@ console.log("5.2) "+ans)
 
 //5.3
 function isDivisible3(n, x, y){
+
     let ans;
-    switch(n%x == 0 && n%y ==0){
+    switch(n%x && n%y){
         case 0:
             ans ="true"
             console.log("5.3) "+ans)
@@ -80,17 +84,18 @@ function isDivisible3(n, x, y){
             console.log("5.3) "+ans)
     }
 }
-isDivisible3(12,12,12)
+isDivisible3(12,6,2)
 
 
 
 //6
 function task6(n){
+  console.log("6)")
     let numbers = [];
     for (let i = 0; i < n; i++) {
         numbers.push(Math.floor(Math.random() * 100));
     }
-    console.log("6) array:"+numbers)
+    console.log(numbers)
   let min = Math.min(...numbers)
   let max = Math.max(...numbers)
   let sum = numbers.reduce(function(a,b){
@@ -118,14 +123,14 @@ function task7(){
     for (let j = 0; j < 5; j++) {
         matrix[i][j] = Math.floor(Math.random() * 10) - 5;
     }
-}
+  }
     for (let i = 0; i < 5; i++) {
     if (matrix[i][i] < 0) {
         matrix[i][i] = 0;
     } else {
         matrix[i][i] = 1;
     }
-}
+  }
     console.log("7)");
     for (let i = 0; i < 5; i++) {
     console.log(matrix[i]);
@@ -137,23 +142,24 @@ task7()
 
 //8
 function Add(a, b) {
+  console.log("8)")
     let result = a + b;
-    console.log("Результат додавання: " + result);
+    console.log("Додавання: " + result);
 }
 function Sub(a, b) {
 let result = a - b;
-console.log("Результат віднімання: " + result);
+console.log("Віднімання: " + result);
 }
 function Mul(a, b) {
 let result = a * b;
-console.log("Результат множення: " + result);
+console.log("Множення: " + result);
 }
 function Div(a, b) {
 if (b === 0) {
     console.log("Помилка: Ділення на нуль неможливе!");
 } else {
     let result = a / b;
-    console.log("Результат ділення: " + result);
+    console.log("Ділення: " + result);
 }
 }
 Add(2,5)
@@ -190,6 +196,7 @@ function checkNum(number) {
     } else {
       console.log("Складене");
     }
+
     let div = [2, 5, 3, 6, 9];
     for (let j = 0; j < div.length; j++) {
       if (number % div[j] === 0) {
